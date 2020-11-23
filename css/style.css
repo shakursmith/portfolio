@@ -23,6 +23,11 @@
     padding-inline-start: 0;
   }
 
+  ol {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
   /* Layout */
   
   .one,
@@ -88,9 +93,7 @@
   }
 
   hr {
-    width: 65%;
-    margin: 0 auto;
-    opacity: 25%;
+    visibility: hidden;
   }
 
   /* Colors */
@@ -112,7 +115,7 @@
   }
 
   .color-soft-grey {
-    color: #f6f6f8;
+    color: #C5D0DD;
   }
 
   .color-blue {
@@ -179,6 +182,10 @@
     flex-direction: column;
   }
 
+  .flex {
+    display: flex;
+  }
+
   .pad-lr {
       padding-left: 2rem;
       padding-right: 2rem;
@@ -222,9 +229,12 @@
     }
   }
 
-
   .margin-clear {
     margin: 0;
+  }
+
+  .margin-top-neg {
+    margin-top: -5%;
   }
 
   .fixed {
@@ -233,6 +243,10 @@
 
   .img-width {
     width: 50%;
+  }
+
+  .border-r {
+    border-right:1px solid #2B394A;
   }
 
   @media only screen and (min-width: 800px) {
@@ -256,6 +270,10 @@
 
   .fa-bars {
     color: black;
+  }
+
+  .fab-blue {
+    color: #2B394A;
   }
 
   .square {
@@ -317,6 +335,18 @@
   .btn2:hover{
     transform: scale(1.05);
     opacity: 100%;
+    transition: all 200ms;
+  }
+
+  .btn3 {
+    flex: 1;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .btn3:hover {
+    background-color: white;
     transition: all 200ms;
   }
 

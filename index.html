@@ -16,88 +16,112 @@
         <script src="https://kit.fontawesome.com/89196488b2.js" crossorigin="anonymous"></script>
     </head>
 
+    <!-- Body --> 
     <body>
-        <span id="hamburgerBtn"><i class="fas fa-bars fa-2x"></i></span>
-        <aside id="navBar" class="one-third full-width-mobile height-vh align-center fixed closed bck-red">
-                <nav class="color-blue pad-tb-mobile">
-                    <section class="one">
-                        <h3 class="pad-tb-tiny line-height-l">Connect With Me</h3>
-                        <div class="navImage">
-                            <img class="img-width shadow-blue" src="images/portfolio-headshot.png" alt="Here I show an image of myself, a headshot for my portfolio.">          
-                        </div>
-                        <p class="pad-tb-small"></p>    
-                        <ul>
-                            <li class="btn2"><a href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
-                            <li class="btn2"><a href="https://github.com/shakursmith"><i class="fab fa-github fa-lg"></i> GitHub</a></li>
-                            <li class="btn2"><a href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg"></i> Message</a></li>
-                        </ul>
-                    </section>    
-                </nav>
-        </aside>
 
-        <article class="two-thirds">
-            <!-- Home -->
-            <section class="home one height-vh flex-align-middle bck-soft-grey border-left">
-                <article class="align-center margin-align-center pad-lr color-blue">
-                    <h1 class="pad-tb margin-clear line-height-l">Shakur Shabaazz</h1>
-                    <p class="pad-tb line-height-l margin-font">Hey, I'm Shakur<br>A young black software developer in Chicago, Illinois.<br>Click below to learn more about me.</p>
-                    <div class="pad-tb margin-font">
-                        <a href="#about"><span class="btn1">Learn More</span></a>
-                    </div>    
-                </article>
-            </section>    
-            <!-- About Me -->
-            <section id="about" class="about one height-vh pad-tb-small flex-align-middle border-left bck-blue">
-                <article class="align-center margin-align-center pad-lr color-white line-height-l">
-                <h2>About Me</h2>
-                <p class="">I create websites and web apps, and design elegant solutions for complex problems. I love to read, code, and hang out with 
-                    my dogs. 
-                </p>
+        <!-- Header --> 
+        <header>
+            <span id="hamburgerBtn"><i class="fas fa-bars fa-2x"></i></span>
+            <aside id="navBar" class="one-third full-width-mobile height-vh align-center fixed closed bck-red">
+                    <!-- Navigation Panel --> 
+                    <nav class="color-blue pad-tb-mobile">
+                        <section class="one">
+                            <h3 class="pad-tb-tiny line-height-l">Connect With Me</h3>
+                            <div class="navImage">
+                                <img class="img-width shadow-blue" src="images/portfolio-headshot.png" alt="Here I show an image of myself, a headshot for my portfolio.">          
+                            </div>
+                            <p class="pad-tb-small"></p> 
+                            <!-- Unordered List -->   
+                            <ul>
+                                <li class="btn2"><a href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
+                                <li class="btn2"><a href="https://github.com/shakursmith"><i class="fab fa-github fa-lg"></i> GitHub</a></li>
+                                <li class="btn2"><a href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg"></i> Message</a></li>
+                            </ul>
+                        </section>    
+                    </nav>
+            </aside>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <article class="two-thirds">
+                <!-- Home -->
+                <section class="home one height-vh flex-align-middle bck-soft-grey border-left">
+                    <article class="align-center margin-align-center pad-lr color-blue margin-top-neg">
+                        <h1 class="pad-tb margin-clear line-height-l">Shakur Shabaazz</h1>
+                        <p class="pad-tb line-height-l margin-font">Hey, I'm Shakur<br>A young black software developer in Chicago, Illinois.<br>Click below to learn more about me.</p>
+                        <!-- Horizontal Row -->
+                        <hr>
+                        <div class="pad-tb">
+                            <a href="#about"><span class="btn1">Learn More</span></a>
+                        </div>    
+                    </article>
+                </section>    
+                <!-- About Me -->
+                <section id="about" class="about one height-vh pad-tb-small flex-align-middle border-left bck-blue">
+                    <article class="align-center margin-align-center pad-lr color-white line-height-l">
+                        <h2>About Me</h2>
+                        <p class="">I create websites and web apps, and design elegant solutions for complex problems. I love to read, code, and hang out with 
+                            my dogs. 
+                        </p>
+                    </article>
+                    <article class="align-center margin-align-center pad-lr color-blue">
+                        <section class="one margin-small-align-center pad-tb-small font-small">
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-html5 fa-2x fab-blue"></i>
+                                    <p class="margin-clear">HTML5</p>
+                                </div>
+                            </article>
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-css3-alt fa-2x fab-blue"></i>
+                                    <p class="margin-clear">CSS3</p>
+                                </div>    
+                            </article>
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-js-square fa-2x fab-blue"></i>
+                                    <p class="margin-clear">JavaScript</p>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="one margin-small-align-center pad-tb-small font-small">
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-php fa-2x fab-blue"></i>
+                                    <p class="margin-clear">PHP</p>
+                                </div>
+                            </article>
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-react fa-2x fab-blue"></i>
+                                    <p class="margin-clear">React</p>
+                                </div>
+                            </article>
+                            <article class="one-third one-third-mobile">
+                                <div class="pad-tb-small square">
+                                    <i class="fab fa-node fa-2x fab-blue"></i>
+                                    <p class="margin-clear">Node.js</p>
+                                </div>
+                            </article>
+                        </section>
+                    </article>
+                </section>
             </article>
-                <article class="align-center margin-align-center pad-lr">
-                    <section class="one margin-small-align-center pad-tb-small font-small">
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-html5 fa-2x"></i>
-                                <p class="margin-clear">HTML5</p>
-                            </div>
-                        </article>
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-css3-alt fa-2x"></i>
-                                <p class="margin-clear">CSS3</p>
-                            </div>    
-                        </article>
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-js-square fa-2x"></i>
-                                <p class="margin-clear">JavaScript</p>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="one margin-small-align-center pad-tb-small font-small">
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-php fa-2x"></i>
-                                <p class="margin-clear">PHP</p>
-                            </div>
-                        </article>
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-react fa-2x"></i>
-                                <p class="margin-clear">React</p>
-                            </div>
-                        </article>
-                        <article class="one-third one-third-mobile">
-                            <div class="pad-tb-small square">
-                                <i class="fab fa-node fa-2x"></i>
-                                <p class="margin-clear">Node.js</p>
-                            </div>
-                        </article>
-                    </section>
-                </article>
-            </section>
-        </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Ordered List -->  
+            <article class="two-thirds"> 
+                <ol class="flex margin-clear bck-soft-grey border-left">
+                    <li class="btn3 border-r"><a href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg fab-blue"></i></a></li>
+                    <li class="btn3 border-r"><a href="https://github.com/shakursmith"><i class="fab fa-github fa-lg fab-blue"></i></a></li>
+                    <li class="btn3"><a href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg fab-blue"></i></a></li>
+                </ol>
+            </article>
+        </footer>
     
         <script src="script.js"></script>
     </body>
