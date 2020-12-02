@@ -1,2 +1,2 @@
-# portfolio
-Check out my growing portfolio site.
+# My Digital Portfolio
+Check it out: [Here](https://shakursmith.github.io/portfolio/)
