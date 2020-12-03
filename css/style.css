@@ -144,7 +144,7 @@
   }
 
   .line-height-xl {
-    line-height: 4em;
+    line-height: 3.5rem;
   }
 
   .line-height-l {
@@ -234,7 +234,7 @@
   }
 
   .margin-top-neg {
-    margin-top: -5%;
+    margin-top: -10%;
   }
 
   .fixed {
@@ -390,3 +390,30 @@
   }
 }
 
+#typing {
+  position: relative;
+  margin-left: 10px;
+}
+
+#typing::after {
+  content: "";
+  position: relative;
+  right: -5px;
+  width: 1px;
+  height: 5%;
+  border-right: 2px solid white;
+  animation: blink 0.5s infinite ease;
+}
+
+.without-after-element::after {
+  content: none!important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
