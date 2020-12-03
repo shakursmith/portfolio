@@ -1,3 +1,4 @@
+/* Navigation for Side Menu (mobile only) */
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navBar = document.getElementById('navBar');
 
@@ -40,5 +41,13 @@ $(document).ready(function(){
     });
   });
 
-
- 
+/* change menu color when we reach the about section */
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var target = $("#about").offset().top;
+    if (scroll >= target) {
+        $("#hamburgerBtn i").addClass("hamburgerBtn-white");
+    } else {
+        $("#hamburgerBtn i").removeClass("hamburgerBtn-white");
+    }
+});
