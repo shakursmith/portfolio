@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Head -->
     <head>
         <meta charset="utf-8">
         <!--  Define Viewport -->
@@ -7,6 +8,8 @@
 
         <title>Shakur's Digital Portfolio</title>
 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <!-- Normalize CSS -->
         <link rel="stylesheet" href="css/normalize.css" />
         <!-- Custom CSS File -->
@@ -20,111 +23,172 @@
 
     <!-- Body --> 
     <body>
-
         <!-- Header --> 
         <header>
-            <span id="hamburgerBtn"><i class="fas fa-bars fa-2x"></i></span>
-            <aside id="navBar" class="z-up one-third full-width-mobile height-vh align-center fixed closed bck-red">
-                    <!-- Navigation Panel --> 
-                    <nav class="color-blue pad-tb-mobile">
-                        <section class="one">
-                            <h3 class="pad-tb-tiny line-height-l">Connect With Me</h3>
-                            <div class="navImage">
-                                <img class="img-width shadow-blue" src="images/portfolio-headshot.png" alt="Here I show an image of myself, a headshot for my portfolio.">          
-                            </div>
-                            <p class="pad-tb-small"></p> 
-                            <!-- Unordered List -->   
-                            <ul>
-                                <li class="btn2"><a href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
-                                <li class="btn2"><a href="https://github.com/shakursmith"><i class="fab fa-github fa-lg"></i> GitHub</a></li>
-                                <li class="btn2"><a href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg"></i> Message</a></li>
-                            </ul>
-                        </section>    
-                    </nav>
-            </aside>
+            <!-- Navbar --> 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">Shakur Shabaazz</a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg color-white"></i> LinkedIn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/shakursmith"><i class="fab fa-github fa-lg color-white"></i> GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg color-white"></i> Message</a></li>
+                    </ul>
+                    <!-- Links -->
+                </div>
+                <!-- Collapsible content -->
+            </nav>
+            <!-- Navbar -->
         </header>
 
         <!-- Main Content -->
-        <main>
-            <article class="two-thirds">
-                <!-- Home -->
-                <section class="home one height-vh flex-align-middle bck-soft-grey border-left">
-                    <article class="align-center margin-align-center pad-lr color-blue margin-top-neg">
-                        <h1 id="typing" class="pad-tb margin-clear line-height-xl"></h1>
-                        <p class="pad-tb line-height-l margin-font">Hey, I'm Shakur<br>A young black software developer in Chicago, Illinois.<br>Click below to learn more about me.</p>
-                        <!-- Horizontal Row -->
-                        <hr>
-                        <div class="pad-tb">
-                            <a href="#about"><span class="btn1">Learn More</span></a>
-                        </div>    
+        <main class="container">
+            <!-- Home -->
+            <section class="row my-5 align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <article>
+                        <h1 class="mb-5">Shakur's Portfolio</h1>
+                        <p class="lead mb-5">A young black software developer in Chicago, Illinois.</p>
+                        <p class="mb-5">Writing code is something that I love to do. Check out some of my work!</p>
+                        <a class="btn btn-danger btn-lg rounded-0 mb-5" href="#projects">View Projects</a> 
+                    </article> 
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/portfolio_img_headshot_feb.png" class="img-fluid shadow rounded" alt="Viewing Shakur, the portfolio designer, and partner together in a close up headshot.">
+                </div>
+            </section>
+            <!-- About Me -->
+            <section class="row mb-5 py-5 justify-content-center align-items-center bg-light" style="height: auto;">
+                <div class="d-flex flex-column align-items-center p-5 w-90 w-75 rounded bg-white shadow">
+                    <h2 class="mb-5" style="text-decoration: underline;">About Me</h2>
+                    <p class="lead">Despite having a bachelors in Marketing, I never thought of myself as much of a "creative". When I made the switch to Software Engineering, my dormant creativity emerged as I discovered the launguage and the tools necessary to cultivate it. I develop React apps, build custom websites and more. Reach out if you'd like to work together.</p>
+                    <p class="lead">Outside of programming, I like to read, primarily non-fiction and some sci-fi. I'm also a casual gamer, who's no stranger to losing. My favorite... <span class="text-muted"> to unlock more information about Shakur, purchase a <a class="text-primary" data-toggle="modal" data-target="#easterEgg">Premium Visitor Pass ($12.99)</a></span></p>
+                </div>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="easterEgg" tabindex="-1" role="dialog" aria-labelledby="easterEggLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="easterEggLabel">Premium Visitor Pass - $12.99</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    Just kidding. I don't want your money, but feel "free" to connect with me on LinkedIn.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Projects -->
+            <section id="projects" class="row mb-5 d-flex align-items-stretch">
+                <h2 class="col-12 mb-5 text-center" style="text-decoration: underline;">My Projects</h2> 
+                <!-- Card - wide image cap -->
+                <div class="col-lg-4 mb-5">
+                    <article class="shadow rounded">
+                        <img src="./images/ft-image_pomodoro-timer.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Interval Timer</h5>
+                            <p class="card-text">Enchance your work flow! Set a timer for how long you want to focus. When the timer is up, an alarm will sound, and you're break period will begin.</p>
+                            <div class="card-body pl-0">
+                                <a href="https://shakursmith.github.io/pomodoro_timer/" class="card-link">Try it out!</a>
+                                <a href="https://github.com/shakursmith/pomodoro_timer" class="card-link">View code</a>
+                                <div class="pt-3">
+                                    <i class="fa fa-html5 fa-sm mr-3 text-muted" aria-hidden="true"> HTML</i>
+                                    <i class="fa fa-css3 fa-sm mr-3 text-muted" aria-hidden="true"> CSS</i>
+                                    <i class="fab fa-js-square fa-sm mr-3 text-muted" aria-hidden="true"> JavaScript</i>
+                                </div>
+                            </div>
+                        </div>
                     </article>
-                </section>    
-                <!-- About Me -->
-                <section id="about" class="about one height-vh pad-tb-small flex-align-middle border-left bck-blue">
-                    <article class="align-center margin-align-center pad-lr color-white line-height-l">
-                        <h2>About Me</h2>
-                        <p class="">I create websites and web apps, and design elegant solutions for complex problems. I love to read, code, and hang out with 
-                            my dogs. 
-                        </p>
+                </div>
+                <!-- Card - wide image cap -->
+                <div class="col-lg-4 mb-5">
+                    <article class="shadow rounded">
+                        <img src="./images/ft-image_local-library.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Admin Dashboard</h5>
+                            <p class="card-text">Designed for an administrator at a local library, I've created a dashboard for displaying data about the library's account holders and books.</p>
+                            <div class="card-body pl-0">
+                                <a href="https://shakursmith.github.io/project-local-library/" class="card-link">Check it out!</a>
+                                <a href="https://github.com/shakursmith/project-local-library" class="card-link">View code</a>
+                                <div class="pt-3">
+                                    <i class="fa fa-html5 fa-sm mr-3 text-muted" aria-hidden="true"> HTML</i>
+                                    <i class="fa fa-css3 fa-sm mr-3 text-muted" aria-hidden="true"> CSS</i>
+                                    <i class="fab fa-js-square fa-sm mr-3 text-muted" aria-hidden="true"> JavaScript</i>
+                                </div>
+                            </div>
+                        </div>
                     </article>
-                    <article class="align-center margin-align-center pad-lr color-blue">
-                        <section class="one margin-small-align-center pad-tb-small font-small">
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-html5 fa-2x fab-blue"></i>
-                                    <p class="margin-clear">HTML5</p>
+                </div>
+                <!-- Card - wide image cap -->
+                <div class="col-lg-4 mb-5">
+                    <article class="shadow rounded">
+                        <img src="./images/ft-image_decoder-ring.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Message Encoder</h5>
+                            <p class="card-text">Write a secret message, or enhance an escape room challenge, using three unique algorithms to encode or decode a message. Try it out below.</p>
+                            <div class="card-body pl-0">
+                                <a href="https://shakursmith.github.io/project-decoder-ring/" class="card-link">Try it out!</a>
+                                <a href="https://github.com/shakursmith/project-decoder-ring" class="card-link">View code</a>
+                                <div class="pt-3">
+                                    <i class="fa fa-html5 fa-sm mr-3 text-muted" aria-hidden="true"> HTML</i>
+                                    <i class="fa fa-css3 fa-sm mr-3 text-muted" aria-hidden="true"> CSS</i>
+                                    <i class="fab fa-js-square fa-sm mr-3 text-muted" aria-hidden="true"> JavaScript</i>
                                 </div>
-                            </article>
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-css3-alt fa-2x fab-blue"></i>
-                                    <p class="margin-clear">CSS3</p>
-                                </div>    
-                            </article>
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-js-square fa-2x fab-blue"></i>
-                                    <p class="margin-clear">JavaScript</p>
-                                </div>
-                            </article>
-                        </section>
-                        <section class="one margin-small-align-center pad-tb-small font-small">
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-php fa-2x fab-blue"></i>
-                                    <p class="margin-clear">PHP</p>
-                                </div>
-                            </article>
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-react fa-2x fab-blue"></i>
-                                    <p class="margin-clear">React</p>
-                                </div>
-                            </article>
-                            <article class="one-third one-third-mobile">
-                                <div class="pad-tb-small square">
-                                    <i class="fab fa-node fa-2x fab-blue"></i>
-                                    <p class="margin-clear">Node.js</p>
-                                </div>
-                            </article>
-                        </section>
+                            </div>
+                        </div>
                     </article>
-                </section>
-            </article>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
-        <footer>
-            <!-- Ordered List -->  
-            <article class="two-thirds"> 
-                <ol class="flex margin-clear bck-soft-grey border-left">
-                    <li class="btn3 border-r"><a href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-lg fab-blue"></i></a></li>
-                    <li class="btn3 border-r"><a href="https://github.com/shakursmith"><i class="fab fa-github fa-lg fab-blue"></i></a></li>
-                    <li class="btn3"><a href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-lg fab-blue"></i></a></li>
-                </ol>
-            </article>
+        <footer class="bg-light py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <article class="w-75 py-5 bg-white shadow rounded">
+                        <div class="d-flex justify-content-around w-75 mx-auto pb-5">
+                            <a class="btn btn-danger shadow-sm" href="https://www.linkedin.com/in/shakur-smith-social/"><i class="fab fa-linkedin fa-xl fab-red"></i></a>
+                            <a class="btn btn-danger shadow-sm" href="https://github.com/shakursmith"><i class="fab fa-github fa-xl fab-red"></i></a>
+                            <a class="btn btn-danger shadow-sm" href="mailto:smith.shakur@ymail.com"><i class="fas fa-envelope fa-xl fab-red"></i></a>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h1 class="text-right pb-3">Contact Me</h1>
+                            <form action="https://formspree.io/f/maylvojo" method="POST" class="row flex-column w-75 form-group">
+                                <label>
+                                    Your name:
+                                    <input required type="text" name="name" class="form-control">
+                                </label>
+                                <label>
+                                    Your email:
+                                    <input required type="text" name="_replyto" class="form-control">
+                                </label>
+                                <label>
+                                    Your message:
+                                    <textarea required name="message" class="form-control"></textarea>
+                                </label>
+                                <button type="submit" class="btn btn-lg btn-danger">Send</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </footer>
     
-        <script src="script.js"></script>
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
